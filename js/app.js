@@ -173,7 +173,7 @@
     const picks = $$("#interestChips .chip.is-active").map(c => c.textContent).join(", ") || "General enquiry";
     const body = `Name: ${f.elements.name.value}\nCompany: ${f.elements.company.value}\nEmail: ${f.elements.email.value}\nPhone: ${f.elements.phone.value}\nInterested in: ${picks}\n\n${f.elements.message.value}`;
     location.href = `mailto:team@nuvance.in?subject=${encodeURIComponent("Enquiry: " + picks)}&body=${encodeURIComponent(body)}`;
-    msg.textContent = "Opening your email app. You can also call us on +91 87509 41855.";
+    msg.textContent = "Your email app should open with this enquiry. If it doesn't, write to team@nuvance.in or call +91 87509 41855.";
   });
 
   /* ---------------- Reveal on scroll ---------------- */
