@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuvance and Co | Accounting, Taxation & Advisory</title>
+  <meta name="description" content="Nuvance and Co — CA-led accounting, taxation and advisory services in India and across the globe. Bookkeeping, GST, income tax, payroll, US GAAP / IFRS reporting, cross-border tax and transfer pricing.">
+  <meta name="theme-color" content="#13224a">
+  <meta property="og:title" content="Nuvance and Co | Accounting · Taxation · Advisory">
+  <meta property="og:description" content="Your trusted partner for accounting & taxation services — India, Global, end-to-end solutions.">
+  <meta property="og:image" content="assets/nuvance-flyer.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Nuvance and Co home">
+        <svg class="brand__mark" viewBox="0 0 120 80" aria-hidden="true">
+          <defs>
+            <linearGradient id="gDark" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4a4f5c"/><stop offset=".55" stop-color="#1c1f27"/><stop offset="1" stop-color="#3b3f4a"/>
+            </linearGradient>
+            <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#b0285a"/><stop offset="1" stop-color="#6d0f33"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 76 L30 10 Q33 3 40 3 L52 3 Q58 3 61 10 L78 52 L60 52 L47 20 L30 76 Z" fill="url(#gDark)"/>
+          <path d="M66 76 Q59 76 57 69 L52 56 L72 56 L90 6 L112 6 L90 69 Q87 76 80 76 Z" fill="url(#gWine)"/>
+        </svg>
+        <span class="brand__text"><strong>nuvance</strong><em>and co</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#global">Global</a>
+        <a href="#tools">Tools</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm hide-sm">Book a consultation</a>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="slash slash--1"></span><span class="slash slash--2"></span><span class="slash slash--3"></span>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Accounting <i>•</i> Taxation <i>•</i> Advisory</p>
+          <h1 class="hero__title reveal">
+            <span class="hero__lead">Your Trusted Partner for</span>
+            <span class="hero__big">Accounting &amp;<br><span class="grad-text">Taxation</span> Services</span>
+          </h1>
+          <ul class="hero__tags reveal">
+            <li>India</li><li>Global</li><li>End-to-End Solutions</li>
+          </ul>
+          <p class="hero__motto reveal"><span>Expertise.</span> <span>Compliance.</span> <span>Growth.</span></p>
+          <p class="hero__desc reveal">At Nuvance and Co, we provide comprehensive accounting and taxation solutions — in India and across the globe, tailored to your unique needs.</p>
+          <div class="hero__cta reveal">
+            <a href="#contact" class="btn btn--primary magnetic">Talk to a CA <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a href="#services" class="btn btn--ghost magnetic">Explore services</a>
+          </div>
+          <div class="hero__quick reveal">
+            <a href="tel:+918750941855"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+91 87509 41855</a>
+            <a href="mailto:team@nuvance.in"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>team@nuvance.in</a>
+          </div>
+        </div>
+        <div class="hero__stage reveal" id="heroStage">
+          <canvas id="heroCanvas" aria-label="Animated 3D Nuvance logo"></canvas>
+          <div class="float-chip chip--a"><b>GST</b><span>Returns &amp; compliance</span></div>
+          <div class="float-chip chip--b"><b>US GAAP / IFRS</b><span>Global reporting</span></div>
+          <div class="float-chip chip--c"><b>ITR</b><span>Filing &amp; advisory</span></div>
+          <p class="stage-hint">Drag to rotate</p>
+        </div>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee"></div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">What we do</p>
+          <h2>Services built for every stage of your business</h2>
+          <p class="section__sub">From day-to-day books to cross-border structuring, one CA-led team handles it end to end.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Service region">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="india">
+            <span class="flag" aria-hidden="true"><i></i><i></i><i></i></span> Our Indian Services
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="global">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg> Our Global Services
+          </button>
+          <span class="tab__ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="service-grid" id="serviceGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ GLOBAL ============ -->
+    <section class="section section--dark" id="global">
+      <div class="container global__grid">
+        <div class="global__globe reveal">
+          <canvas id="globeCanvas" aria-label="Interactive 3D globe showing cross-border connections from India"></canvas>
+          <div class="globe-legend"><span class="dot dot--home"></span> India HQ <span class="dot dot--link"></span> Cross-border engagements</div>
+        </div>
+        <div class="global__copy">
+          <p class="kicker kicker--light reveal">Grow globally, with Nuvance</p>
+          <h2 class="reveal">One partner across borders</h2>
+          <p class="section__sub reveal">Expanding overseas or bringing a foreign business into India? We bridge accounting standards, tax regimes and compliance calendars so you can operate confidently in every market.</p>
+          <ul class="global__list" id="globalList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLS ============ -->
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Free toolkit</p>
+          <h2>Quick numbers, before we talk</h2>
+          <p class="section__sub">Indicative calculators and a live compliance tracker. For decisions that matter, let our CAs review your exact situation.</p>
+        </div>
+
+        <div class="toolbox reveal">
+          <div class="toolbox__nav" role="tablist" aria-label="Tools">
+            <button class="tool-tab is-active" data-tool="tax" role="tab" aria-selected="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h2M14 18h2"/></svg>
+              Income Tax Estimator
+            </button>
+            <button class="tool-tab" data-tool="gst" role="tab" aria-selected="false">
+              <svg viewBox="0 0 24 24"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+              GST Calculator
+            </button>
+            <button class="tool-tab" data-tool="cal" role="tab" aria-selected="false">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Compliance Tracker
+            </button>
+          </div>
+
+          <!-- Tax -->
+          <div class="tool-panel is-active" data-panel="tax">
+            <div class="tool-form">
+              <label class="field">
+                <span>Annual gross income (₹)</span>
+                <input type="text" inputmode="numeric" id="taxIncome" value="15,00,000" autocomplete="off">
+              </label>
+              <input type="range" id="taxRange" min="0" max="5000000" step="25000" value="1500000" aria-label="Annual income slider">
+              <div class="seg" role="radiogroup" aria-label="Income type">
+                <button class="seg__btn is-active" data-salaried="1" role="radio" aria-checked="true">Salaried</button>
+                <button class="seg__btn" data-salaried="0" role="radio" aria-checked="false">Business / Other</button>
+              </div>
+              <p class="tool-note">New tax regime, FY 2025-26 (AY 2026-27) slabs. Includes ₹75,000 standard deduction for salaried, Sec. 87A rebate with marginal relief, and 4% cess. Surcharge not included.</p>
+            </div>
+            <div class="tool-result">
+              <div class="ring" id="taxRing">
+                <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="ring__bg"/><circle cx="60" cy="60" r="52" class="ring__fg" id="taxRingFg"/></svg>
+                <div class="ring__label"><small>Effective rate</small><strong id="taxEff">0%</strong></div>
+              </div>
+              <dl class="kv">
+                <div><dt>Taxable income</dt><dd id="taxTaxable">₹0</dd></div>
+                <div><dt>Tax on slabs</dt><dd id="taxSlab">₹0</dd></div>
+                <div><dt>Rebate / relief</dt><dd id="taxRebate">₹0</dd></div>
+                <div><dt>Health &amp; edu. cess</dt><dd id="taxCess">₹0</dd></div>
+                <div class="kv__total"><dt>Estimated tax</dt><dd id="taxTotal">₹0</dd></div>
+                <div><dt>Monthly take-home*</dt><dd id="taxMonthly">₹0</dd></div>
+              </dl>
+              <div class="slab-bars" id="slabBars" aria-label="Tax by slab"></div>
+            </div>
+          </div>
+
+          <!-- GST -->
+          <div class="tool-panel" data-panel="gst" hidden>
+            <div class="tool-form">
+              <label class="field">
+                <span>Amount (₹)</span>
+                <input type="text" inputmode="decimal" id="gstAmount" value="10,000" autocomplete="off">
+              </label>
+              <div class="field"><span>GST rate</span>
+                <div class="chips" id="gstRates" role="radiogroup" aria-label="GST rate">
+                  <button class="chip" data-rate="0" role="radio">0%</button>
+                  <button class="chip" data-rate="5" role="radio">5%</button>
+                  <button class="chip is-active" data-rate="18" role="radio">18%</button>
+                  <button class="chip" data-rate="40" role="radio">40%</button>
+                </div>
+              </div>
+              <div class="seg" role="radiogroup" aria-label="Calculation mode">
+                <button class="seg__btn is-active" data-mode="add" role="radio" aria-checked="true">Add GST</button>
+                <button class="seg__btn" data-mode="remove" role="radio" aria-checked="false">Remove GST</button>
+              </div>
+              <div class="seg" role="radiogroup" aria-label="Supply type">
+                <button class="seg__btn is-active" data-supply="intra" role="radio" aria-checked="true">Intra-state (CGST + SGST)</button>
+                <button class="seg__btn" data-supply="inter" role="radio" aria-checked="false">Inter-state (IGST)</button>
+              </div>
+              <p class="tool-note">Rates reflect the rationalised GST structure effective 22 September 2025. Confirm the rate for your HSN/SAC code with us.</p>
+            </div>
+            <div class="tool-result">
+              <div class="stack3d" id="gstStack" aria-hidden="true">
+                <div class="stack3d__base"><span>Base</span></div>
+                <div class="stack3d__tax"><span>GST</span></div>
+              </div>
+              <dl class="kv">
+                <div><dt>Net amount</dt><dd id="gstNet">₹0</dd></div>
+                <div id="gstRowC"><dt>CGST</dt><dd id="gstC">₹0</dd></div>
+                <div id="gstRowS"><dt>SGST</dt><dd id="gstS">₹0</dd></div>
+                <div id="gstRowI" hidden><dt>IGST</dt><dd id="gstI">₹0</dd></div>
+                <div class="kv__total"><dt>Gross amount</dt><dd id="gstGross">₹0</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Compliance -->
+          <div class="tool-panel" data-panel="cal" hidden>
+            <div class="cal-head">
+              <div>
+                <h3>Upcoming due dates</h3>
+                <p class="tool-note">Common statutory deadlines for Indian businesses, counted down from today. Due dates can be extended by notification. We track them for our clients.</p>
+              </div>
+              <div class="chips" id="calFilter" role="group" aria-label="Filter deadlines">
+                <button class="chip is-active" data-f="all">All</button>
+                <button class="chip" data-f="GST">GST</button>
+                <button class="chip" data-f="TDS">TDS</button>
+                <button class="chip" data-f="Income Tax">Income Tax</button>
+                <button class="chip" data-f="Payroll">Payroll</button>
+              </div>
+            </div>
+            <ol class="timeline" id="calList"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section section--tint" id="why">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Why choose Nuvance and Co?</p>
+          <h2>Five promises behind every engagement</h2>
+        </div>
+        <div class="why-grid" id="whyGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">How we work</p>
+          <h2>From first call to full compliance</h2>
+        </div>
+        <ol class="process" id="processList">
+          <li class="reveal"><span class="process__n">01</span><h3>Discover</h3><p>We understand your business, structure, jurisdictions and current compliance position.</p></li>
+          <li class="reveal"><span class="process__n">02</span><h3>Plan</h3><p>A clear scope, timeline and fee proposal, with proactive tax planning built in from day one.</p></li>
+          <li class="reveal"><span class="process__n">03</span><h3>Execute</h3><p>Books, filings, payroll and reporting handled on schedule by a CA-led team.</p></li>
+          <li class="reveal"><span class="process__n">04</span><h3>Advise</h3><p>Regular reviews and insights so you can focus on growth, in India and abroad.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <p class="cta-band__quote">“Let us handle the numbers, while you focus on what matters.”</p>
+        <a href="#contact" class="btn btn--light magnetic">Get started <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let’s talk about your numbers</h2>
+          <p class="section__sub">Tell us what you need. A chartered accountant from our team will get back to you.</p>
+          <a class="contact-card" href="tel:+918750941855">
+            <span class="contact-card__ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span><small>Call us</small><b>+91 87509 41855</b></span>
+          </a>
+          <a class="contact-card" href="mailto:team@nuvance.in">
+            <span class="contact-card__ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+            <span><small>Email us</small><b>team@nuvance.in</b></span>
+          </a>
+          <a class="contact-card" href="https://wa.me/918750941855" target="_blank" rel="noopener">
+            <span class="contact-card__ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
+            <span><small>WhatsApp</small><b>Chat with our team</b></span>
+          </a>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label class="field"><span>Full name</span><input name="name" required autocomplete="name"></label>
+            <label class="field"><span>Company</span><input name="company" autocomplete="organization"></label>
+          </div>
+          <div class="form-row">
+            <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+            <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="field"><span>I’m interested in</span>
+            <div class="chips chips--wrap" id="interestChips"></div>
+          </div>
+          <label class="field"><span>Message</span><textarea name="message" rows="4" placeholder="Tell us briefly about your requirement"></textarea></label>
+          <button class="btn btn--primary btn--block" type="submit">Send enquiry <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#top" class="brand brand--light" aria-label="Nuvance and Co home">
+          <svg class="brand__mark" viewBox="0 0 120 80" aria-hidden="true">
+            <path d="M6 76 L30 10 Q33 3 40 3 L52 3 Q58 3 61 10 L78 52 L60 52 L47 20 L30 76 Z" fill="#e6e8ee"/>
+            <path d="M66 76 Q59 76 57 69 L52 56 L72 56 L90 6 L112 6 L90 69 Q87 76 80 76 Z" fill="url(#gWine)"/>
+          </svg>
+          <span class="brand__text"><strong>nuvance</strong><em>and co</em></span>
+        </a>
+        <p class="footer__tag">Accounting • Taxation • Advisory</p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Explore</h4><a href="#services">Services</a><a href="#global">Global</a><a href="#tools">Tools</a><a href="#why">Why Us</a></div>
+        <div><h4>Reach us</h4><a href="tel:+918750941855">+91 87509 41855</a><a href="mailto:team@nuvance.in">team@nuvance.in</a></div>
+      </div>
+      <p class="footer__slogan">Grow globally,<br>with Nuvance</p>
+    </div>
+    <div class="container footer__base">
+      <span>© <span id="year"></span> Nuvance and Co. All rights reserved.</span>
+      <span>Calculators are indicative only and do not constitute tax advice.</span>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://wa.me/918750941855" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  </a>
+
+  <script src="js/app.js" defer></script>
+  <script type="module" src="js/scene.js"></script>
+</body>
+</html>
